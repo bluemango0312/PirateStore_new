@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:paddingTop="40dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#000000"
+            app:srcCompat="@drawable/banner2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/joinTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="CREW 가입 신청서"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/IDplainText"
+                android:layout_width="261dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="CREW Email"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="#B9B9B9"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="70dp"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/idCheckTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="이미 가입된 이메일은 재가입 불가능"
+                android:textColor="#A1A1A1" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="70dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/PWplainText"
+                android:layout_width="261dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="CREW PW"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="#B9B9B9"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="70dp"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/pwTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="PW는 4자리 이상 12자리 이하로 설정"
+                android:textColor="#A1A1A1" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="70dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/nameplainText"
+                android:layout_width="261dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="CREW Name"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="#B9B9B9"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/NumberplainText"
+                android:layout_width="261dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_box"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="CREW PhoneNumber"
+                android:inputType="text"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="#B9B9B9"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="60dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="90dp"
+                android:layout_height="10dp" />
+
+            <android.widget.Button
+                android:id="@+id/twitterBtn"
+                android:layout_width="181dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:background="@drawable/twitter_btn"
+                android:gravity="center" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="90dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="60dp"
+            android:layout_height="10dp" />
+
+        <android.widget.Button
+            android:id="@+id/profileJoinBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/join_btn"
+            android:fontFamily="sans-serif"
+            android:text="Pirate Profile 작성 →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="60dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
